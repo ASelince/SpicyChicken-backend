@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <artifactId>spicy-chicken-app</artifactId>
+
+    <parent>
+        <groupId>com.spicy.boot</groupId>
+        <artifactId>spicy-chicken-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.spicy.starter</groupId>
+            <artifactId>spicy-common-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.spicy.boot</groupId>
+            <artifactId>spicy-chicken-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.spicy.boot</groupId>
+            <artifactId>spicy-chicken-wechat</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>

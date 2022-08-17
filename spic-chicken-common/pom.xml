@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.spicy.common</groupId>
+        <artifactId>spicy-common-bom</artifactId>
+        <version>1.0.0</version>
+        <relativePath>spicy-chicken-bom/pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.spicy</groupId>
+    <artifactId>spicy-common</artifactId>
+    <packaging>pom</packaging>
+
+    <name>spicy-common</name>
+
+    <modules>
+        <module>spicy-chicken-bom</module>
+        <module>spicy-chicken-starter</module>
+    </modules>
+
+</project>

@@ -3,22 +3,52 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0-M4</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
+    <groupId>com.spicy.boot</groupId>
+    <artifactId>spicy-chicken-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
 
-    <groupId>com.spicy.chicken</groupId>
-    <artifactId>SpicyChicken</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>SpicyChicken</name>
     <description>SpicyChicken</description>
+
+    <modules>
+        <module>spicy-chicken-app</module>
+        <module>spicy-chicken-core</module>
+        <module>spic-chicken-common</module>
+        <module>spicy-chicken-wechat</module>
+    </modules>
 
     <properties>
         <java.version>17</java.version>
+        <bytz.app.name>spicy-chicken</bytz.app.name>
+        <spicy.chicken.version>1.0.0</spicy.chicken.version>
     </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <dependency>
+                <groupId>com.spicy.common</groupId>
+                <artifactId>spicy-common-bom</artifactId>
+                <version>${spicy.chicken.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.spicy.boot</groupId>
+                <artifactId>spicy-chicken-core</artifactId>
+                <version>${spicy.chicken.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.spicy.boot</groupId>
+                <artifactId>spicy-chicken-wechat</artifactId>
+                <version>${spicy.chicken.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
 
     <dependencies>
         <dependency>

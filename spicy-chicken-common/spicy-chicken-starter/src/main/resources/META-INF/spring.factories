@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.spicy.config.Swagger3Config,\
+com.spicy.config.BeanPostProcessorConfig

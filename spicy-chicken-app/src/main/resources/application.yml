@@ -1,0 +1,26 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /spicy
+
+spring:
+  profiles:
+    active: local
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+mybatis-plus:
+  mapper-locations:
+    - classpath*:com/spicy/**/xml/**Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: 4
+      table-underline: true
+  configuration:
+    call-setters-on-nulls: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

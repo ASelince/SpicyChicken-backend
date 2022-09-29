@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.Objects;
 
 @Getter
@@ -22,7 +23,7 @@ public abstract class DataEntity<ID extends Serializable> implements Entity<ID>,
     private String createdByName;
 
     @CreatedTime
-    private String createdTime;
+    private Date createdTime;
 
     @UpdatedBy
     private String updatedBy;
@@ -31,7 +32,7 @@ public abstract class DataEntity<ID extends Serializable> implements Entity<ID>,
     private String updatedByName;
 
     @UpdatedTime
-    private String updatedTime;
+    private Date updatedTime;
 
     @Version
     private Integer dataVersion = -1;

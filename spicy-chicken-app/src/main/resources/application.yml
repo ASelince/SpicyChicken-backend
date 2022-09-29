@@ -1,5 +1,5 @@
 server:
-  port: 8089
+  port: 8080
   servlet:
     context-path: /spicy
 
@@ -15,7 +15,7 @@ spring:
 
 mybatis-plus:
   mapper-locations:
-    - classpath*:com/spicy/**/xml/**Mapper.xml
+    - classpath*:com/spicy/**/mapper/xml/**Mapper.xml
   global-config:
     banner: false
     db-config:
@@ -24,3 +24,9 @@ mybatis-plus:
   configuration:
     call-setters-on-nulls: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+we-chat:
+  token: testToken
+  app-id: wxea529********
+  app-secret: 3911*************825fe

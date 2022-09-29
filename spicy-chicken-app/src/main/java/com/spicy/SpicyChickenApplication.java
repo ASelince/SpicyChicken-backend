@@ -13,7 +13,6 @@ import java.net.UnknownHostException;
 @SpringBootApplication(scanBasePackages = "com.spicy")
 public class SpicyChickenApplication {
 
-
     public static void main(String[] args) throws UnknownHostException {
 
         ConfigurableApplicationContext application = SpringApplication.run(SpicyChickenApplication.class, args);

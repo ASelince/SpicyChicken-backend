@@ -12,6 +12,7 @@
     <groupId>com.spicy.common</groupId>
     <artifactId>spicy-common-starter</artifactId>
     <packaging>jar</packaging>
+    <version>1.0.0</version>
 
     <name>spicy-common-starter</name>
 
@@ -68,6 +69,31 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.spicy.common</groupId>
+            <artifactId>spicy-common-data</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.spicy.common</groupId>
+            <artifactId>spicy-common-shared</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
     </dependencies>

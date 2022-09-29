@@ -24,6 +24,17 @@
             <artifactId>spicy-common-shared</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.spicy.boot</groupId>
+            <artifactId>spicy-chicken-system</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.spicy.common</groupId>
+            <artifactId>spicy-common-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>
